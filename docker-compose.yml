@@ -10,23 +10,8 @@ services:
      command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
      ports:
       - 8021:80
- ocsafd:
-     image: cybershelby/sql:47846
-     command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
-     ports:
-      - 8022:80
- oessi:
-     image: cybershelby/sql:48529
-     command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
-     ports:
-      - 8023:80
  sfmab:
      image: cybershelby/bypass:26246
-     command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
-     ports:
-      - 8024:80
- cpap:
-     image: cybershelby/xss:47427
      command: /bin/bash -c "service apache2 start; service mysql start; tail -f /dev/null"
      ports:
       - 8024:80
